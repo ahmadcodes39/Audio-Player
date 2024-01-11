@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Audio PLayer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5fed52a89.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angles-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="https://i.ytimg.com/vi/cNpF5uiATtI/maxresdefault.jpg" alt="hello" class="song-img">
+            <h2>Mahir Zain</h2>
+            <p>Assalam-o-Alaika</p>
+            <audio id="song">
+                <source src="assalam o alaika.mp4" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward" id="backword"></i></div>
+                <div onclick="PlayPause()"><i class="fa-solid fa-pause" id="controlBtn"></i></div>
+                <div><i class="fa-solid fa-forward" id="forword"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
