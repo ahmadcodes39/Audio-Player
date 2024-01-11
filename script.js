@@ -27,15 +27,6 @@ song.addEventListener('ended', function () {
     controlBtn.classList.add("fa-play");
 })
 
-
-// if (song.play()) {
-
-//     setInterval(() => {
-//         progress.value = song.currentTime;
-//     }, 500)
-// }
-
-
 if (song.play()) {
 
     setInterval(() => {
